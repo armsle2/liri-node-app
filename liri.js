@@ -5,6 +5,16 @@ var twitterKeys = require("./keys.js")
 var request = require("request");
 var argOne = process.argv[2];
 var argTwo = process.argv[3];
+function movieInfo(body){
+	console.log("Movie Title: " + body.Title);
+	console.log("Year: " + body.Year);
+	console.log("IMDB Rating: " + body.Ratings[0].Value);
+	console.log("Rotten Tomatoes Rating: " + body.Ratings[1].Value);
+	console.log("Country: " + body.Country);
+	console.log("Language: " + body.Language);
+	console.log("Actors: " + body.Actors);
+	console.log("Plot: " + body.Plot);
+}
 
 var twitterAPI = 
 { method: 'GET',
@@ -40,31 +50,16 @@ request(omdbAPI, function (error, response, body) {
   // if (error) {return console.log(error)}
  body = JSON.parse(body);
  // console.log(body)
-function movieInfo(){
-	console.log("Movie Title: " + body.Title);
-	console.log("Year: " + body.Year);
-	console.log("IMDB Rating: " + body.Ratings[0].Value);
-	console.log("Rotten Tomatoes Rating: " + body.Ratings[1].Value);
-	console.log("Country: " + body.Country);
-	console.log("Language: " + body.Language);
-	console.log("Actors: " + body.Actors);
-	console.log("Plot: " + body.Plot);
-}
+
 if (argOne === "movie-this" && body.Title === undefined){
 	omdbAPI.qs.t = "Mr. Nobody"
     request(omdbAPI, function (error, response, body){body = JSON.parse(body);
-	console.log("Movie Title: " + body.Title);
-	console.log("Year: " + body.Year);
-	console.log("IMDB Rating: " + body.Ratings[0].Value);
-	console.log("Rotten Tomatoes Rating: " + body.Ratings[1].Value);
-	console.log("Country: " + body.Country);
-	console.log("Language: " + body.Language);
-	console.log("Actors: " + body.Actors);
-	console.log("Plot: " + body.Plot);
+		movieInfo(body);
+			
 	});
 }
 else if(argOne === "movie-this"){
-	movieInfo();
+	movieInfo(body);
 }
 
 
