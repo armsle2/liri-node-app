@@ -21,6 +21,8 @@ my-tweets
 #### LIRI's Choice
 do-what-it-says
 
+Note: Be sure to check out to check out the log.txt file to see all of the searches that have been logged!
+
 
 ![liri developer mode](https://user-images.githubusercontent.com/33161495/34115411-8c3070b8-e3e3-11e7-822b-2927a5c0dba9.gif)
 
