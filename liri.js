@@ -129,41 +129,6 @@ function myTweets(){
 	});
 }
 
-function myTweets(){
-	var params = {
-	screen_name: 'cl_atlanta', 
-	count: '20'
-	}
-	client.get("statuses/user_timeline", params,  function (error, tweets, response) {
-
-	// console.log(tweets)
-  if (error) {
-  	return console.log(error)
-  	return logger.info(error)
-  }
- // body = JSON.parse(body);
-	console.log("***********************");
-	logger.info("***********************");
-	tweets.forEach((results)=>{
-			console.log();
-			logger.info();
-	  		console.log(results.created_at.slice(0, -10));
-	  		logger.info(results.created_at.slice(0, -10));
-	  		console.log(results.text);
-	  		logger.info(results.text);
-			console.log();
-			logger.info();
-	  		console.log("-------------------")
-	  		logger.info("-------------------")
-		
-		})
-	console.log();
-	logger.info();
-	console.log("***********************");	
-	logger.info("***********************");	
-	});
-}
-
 function movieInfo(search){
 	var omdbAPI = 
 	{ 
