@@ -1,3 +1,5 @@
 # liri-node-app
 
-![alt text](https://github.com/armsle2/liri-node-app/blob/library/LIRI%20Developer%20Mode.gif)
+
+![liri consumer mode](https://user-images.githubusercontent.com/33161495/34115019-5bc915f2-e3e2-11e7-8943-2929d5a2c311.gif)
+
