@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/armsle2/liri-node-app#readme",
   "dependencies": {
+    "axios": "^0.17.1",
+    "inquirer": "^4.0.1",
+    "log4js": "^2.4.1",
     "node-spotify-api": "^1.0.7",
     "request": "^2.83.0",
+    "superagent": "^3.8.2",
     "twitter": "^1.7.1"
   }
 }
