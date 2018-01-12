@@ -1,5 +1,7 @@
-# LIRI (Language Interpretation and Recognition Interface)
+# MambaLIRI (Language Interpretation and Recognition Interface)
 ### Developed by Leaveil Armstrong
+
+Mamba is a Language Interpretation and Recognition Interface that uses CLI to search OMDB, Spotify, and Twitter's APIs.
 
 Use this app to search Spotify for a song or OMDB for a movie. You can event check out my latest tweets! 
 If you're feeling indecisive then just let LIRI choose for you.
