@@ -1,4 +1,4 @@
-# MambaLIRI (Language Interpretation and Recognition Interface)
+# Mamba
 ### Developed by Leaveil Armstrong
 
 Mamba is a Language Interpretation and Recognition Interface that uses CLI to search OMDB, Spotify, and Twitter's APIs.
